@@ -7,6 +7,7 @@ const hamburger = document.querySelector(".hamburger")
 const close = document.querySelector(".close")
 const down_arrow = document.querySelector(".down-arrow")
 const sidelink = document.querySelector(".sidelinks");
+const viewportwidth = window.innerWidth
 const sidebar_background = document.querySelector(".sidebar-background");
 
 
@@ -40,8 +41,11 @@ hidden_menu.addEventListener("click", (e) =>{
   menu_slider(clicked_btn)  
 })
 
+
 //removing side menu when a link is clicked
 sidelink.addEventListener("click", function(e){
+  if(viewportwidth > 1190) return
+
   const clicked_btn = e.target.closest(".link")
   console.log(clicked_btn);
   

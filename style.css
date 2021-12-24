@@ -364,6 +364,7 @@ html {
   .skills {
     background-color: var(--clr-accent);
     margin: 2rem 2rem 8rem 14rem;
+    width: 70vw;
     padding: 2rem;
     border: solid 1px none;
     border-radius: 0.5rem;
@@ -378,13 +379,14 @@ html {
     border: solid 1px none;
     border-radius: 0.5rem;
     box-shadow: var(--bs);
+    background-color: rgb(112, 104, 104);
     margin: 1rem;
     list-style: none;
   }
 
   .skills > li > img {
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
   }
 
   /* project section */
