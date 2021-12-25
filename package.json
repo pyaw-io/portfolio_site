@@ -2,11 +2,14 @@
   "name": "current_portfolio",
   "version": "1.0.0",
   "description": "personal portfolio website",
-  "main": "index.js",
+  "default": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "test": "parcel build index.html --dist-dir ./dist"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Eric Owusu",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.0.1"
+  }
 }
