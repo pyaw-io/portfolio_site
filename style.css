@@ -720,6 +720,7 @@ html {
     flex-wrap: wrap;
   }
   .skills > li {
+    background-color:var(--clr-light);
     padding: 0.5rem;
     border: solid 1px none;
     border-radius: 0.3rem;
@@ -1026,6 +1027,7 @@ html {
     flex-wrap: wrap;
   }
   .skills > li {
+    background-color: var(--clr-light);
     padding: 0.5rem;
     border: solid 1px none;
     border-radius: 0.3rem;
