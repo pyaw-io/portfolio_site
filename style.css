@@ -196,6 +196,10 @@ html {
     color: black;
   }
 
+  .project-info .repo{
+    display: none;
+  }
+
   .section-title {
     margin-bottom: 4rem;
     text-align: center;
