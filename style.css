@@ -327,7 +327,7 @@ html {
     display: none;
   }
   .section-title {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     text-align: center;
     color: var(--clr-light);
   }
@@ -453,16 +453,17 @@ html {
   }
   .mypicture {
     width: 20em;
-    height: 25em;
+    height: 20em;
     background-color: black;
+    background-image: url(/images/profile.jpeg);
+    background-position: center;
+    background-size: contain;
     justify-self: center;
     align-self: center;
     box-shadow: var(--bs);
+    border-radius: 50%;
   }
-  .mypicture > img {
-    width: 100%;
-    height: 100%;
-  }
+
   .about-info {
     width: 25em;
     height: auto;
@@ -610,6 +611,7 @@ html {
     flex-basis: 50%;
   }
 }
+
 @media (max-width: 1190px) {
   .logo {
     display: none;
@@ -729,9 +731,9 @@ html {
 .socials > ul > li > a > i {
     display: none;
   }
-  .profile-picture {
+  /* .profile-picture {
     display: none;
-  }
+  } */
   .intro-message {
     margin: auto auto;
     padding: 4rem;
@@ -740,30 +742,40 @@ html {
   .section-title {
     color: var(--clr-light);
     text-align: center;
-    margin: 4rem 2rem;
+    margin: 2rem 2rem;
   }
   /* About_me  */
   .about-me {
     color: var(--clr-light);
-    padding: 3rem;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-info {
+    width: 25em;
+    height: auto;
+    color: var(--clr-light);
+    text-align: center;
+  }
+  .about-info > p {
+    padding: 0 2rem;
+    color: var(--clr-light-bg);
+    line-height: 2.5;
   }
   .mypicture {
-    margin-top: 3rem;
+    margin: 1rem;
+    height: 15em;
+    width: 15em;
+    border-radius: 50%;
     background-color: black;
+    background-image: url(/images/profile.jpeg);
+    background-position: center;
+    background-size: contain;
     box-shadow: var(--bs);
   }
-  .mypicture > img {
-    width: 100%;
-    height: auto;
-  }
-  .mypicture:nth-of-type(1) {
-    order: 2;
-  }
-  .about-info:nth-of-type(2) {
-    order: 1;
-  }
+
+ 
   /* skills section */
   .skills {
     background-color: var(--clr-accent);
@@ -991,7 +1003,7 @@ html {
   .section-title {
     color: var(--clr-light);
     text-align: center;
-    margin: 4rem 2rem;
+    margin: 2rem 2rem;
   }
   /* About_me  */
   .about-me {
@@ -1001,20 +1013,22 @@ html {
     flex-direction: column;
   }
   .mypicture {
-    margin-top: 3rem;
+    margin: 1rem;
+    height: 15em;
+    width: 15em;
+    border-radius: 50%;
     background-color: black;
+    background-image: url(/images/profile.jpeg);
+    background-position: center;
+    background-size: contain;
     box-shadow: var(--bs);
   }
-  .mypicture > img {
-    width: 100%;
-    height: auto;
-  }
+ 
   .mypicture:nth-of-type(1) {
-    order: 2;
-  }
-  .about-info:nth-of-type(2) {
     order: 1;
   }
+  
+  
   /* skills section */
   .skills {
     background-color: var(--clr-accent);
