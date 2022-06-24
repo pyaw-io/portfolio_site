@@ -205,8 +205,13 @@ html {
 .footer {
   color: #fffffd;
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
+  font-size: medium;
+  width: 50%;
+  margin: auto;
+
 }
 
 
@@ -1129,4 +1134,3 @@ html {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
