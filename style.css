@@ -12,9 +12,9 @@
   --fw-reg: 300;
   --fw-bold: 900;
   --clr-light: #fffffd;
-  --clr-dark: #09697f;
-  --clr-accent: #4cc9f0;
-  --clr-dark-bg: #03242b;
+  --clr-dark: #09697f;/* #4cc9f0 */
+  --clr-accent: #104B5D;
+  --clr-dark-bg: #CDCFDC;
   --clr-light-bg: #d0e0f0;
   --fs-h1: 3rem;
   --fs-h2: 2.5rem;
@@ -23,7 +23,7 @@
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.432),
     0.5em 0.5em 0.95em rgba(0, 0, 0, 0.397);
 }
-
+ 
 body,
 html {
   font-family: "Montserrat", sans-serif;
@@ -203,7 +203,7 @@ html {
   cursor: pointer;
 }
 .footer {
-  color: #fffffd;
+  color: var(--clr-accent);
   display: flex;
   text-align: center;
   align-items: center;
@@ -246,7 +246,7 @@ html {
     text-align: right;
   }
   .sidebar-background {
-    background-color: #8338ec;
+    background-color: #104B5D;
     position: fixed;
     left: 0;
     width: 5.5rem;
@@ -326,7 +326,7 @@ html {
   }
   .project-info i {
     font-size: 2rem;
-    color: black;
+    color: #080000;
   }
   .project-info .repo {
     display: none;
@@ -334,7 +334,7 @@ html {
   .section-title {
     margin-bottom: 2rem;
     text-align: center;
-    color: var(--clr-light);
+    color: var(--clr-accent);
   }
   .greeting {
     transform: translateX(-250%);
@@ -473,12 +473,12 @@ html {
     width: 25em;
     height: auto;
     margin-left: 10rem;
-    color: var(--clr-light);
+    color: #104B5D;
     text-align: center;
   }
   .about-info > p {
     padding: 0 2rem;
-    color: var(--clr-light-bg);
+    color: rgb(0, 0, 0);
     line-height: 2.5;
   }
   /* skills section */
@@ -536,6 +536,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    color: var(--clr-light-bg);
     transform: scale(0.5, 0.5);
   }
   .project-animation {
@@ -544,11 +545,12 @@ html {
   .project-info > h5 {
     text-align: center;
     font-weight: bold;
+    color: var(--clr-light-bg);
   }
   .project-tech {
     margin-top: 2rem;
     display: flex;
-    color: var(--clr-dark);
+    color: var(--clr-light-bg);
     list-style: none;
     justify-content: center;
   }
@@ -556,7 +558,7 @@ html {
     padding-right: 1rem;
   }
   .project-tech :last-child {
-    color: black;
+    color: var(--clr-dark-bg);
     font-weight: 800;
   }
   .repo {
@@ -570,7 +572,7 @@ html {
   }
   .repo > p > a {
     text-decoration: none;
-    color: black;
+    color: var(--clr-light-bg);
   }
   .repo p:first-child {
     border-right: solid 3px black;
@@ -605,6 +607,7 @@ html {
     border: solid 1px none;
     border-radius: 0.5rem;
     box-shadow: var(--bs);
+    color: var(--clr-light-bg);
   }
   .contact {
     flex-basis: 50%;
@@ -745,7 +748,7 @@ html {
     text-align: center;
   }
   .section-title {
-    color: var(--clr-light);
+    color: var(--clr-accent);
     text-align: center;
     margin: 2rem 2rem;
   }
@@ -760,12 +763,12 @@ html {
   .about-info {
     width: 25em;
     height: auto;
-    color: var(--clr-light);
+    color: var(--clr-accent);
     text-align: center;
   }
   .about-info > p {
     padding: 0 2rem;
-    color: var(--clr-light-bg);
+    color: var(--clr-accent);
     line-height: 2.5;
   }
   .mypicture {
@@ -817,6 +820,7 @@ html {
     box-shadow: var(--bs);
     display: flex;
     flex-direction: column;
+    color: var(--clr-light-bg);
   }
   .project-image {
     display: none;
@@ -827,11 +831,12 @@ html {
   .project-info > h5 {
     text-align: center;
     font-weight: bold;
+  
   }
   .project-tech {
     margin-top: 2rem;
     display: flex;
-    color: var(--clr-dark);
+    color: var(--clr-light);
     list-style: none;
     justify-content: center;
   }
@@ -853,7 +858,7 @@ html {
   }
   .repo > p > a {
     text-decoration: none;
-    color: black;
+    color: var(--clr-light-bg);
   }
   .repo p:first-child {
     border-right: solid 3px black;
@@ -878,6 +883,7 @@ html {
   }
   .contact-info {
     margin: 3rem 0;
+    color: var(--clr-light-bg);
   }
 }
 @media (max-width: 600px) {
@@ -1006,17 +1012,18 @@ html {
     text-align: center;
   }
   .section-title {
-    color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;
     margin: 2rem 2rem;
   }
   /* About_me  */
   .about-me {
-    color: var(--clr-light);
+    color: var(--clr-accent);
     padding: 3rem;
     display: flex;
     flex-direction: column;
   }
+  
   .mypicture {
     margin: 1rem;
     height: 15em;
@@ -1070,6 +1077,7 @@ html {
     box-shadow: var(--bs);
     display: flex;
     flex-direction: column;
+    color: var(--clr-light-bg);
   }
   .project-image {
     display: none;
@@ -1106,7 +1114,7 @@ html {
   }
   .repo > p > a {
     text-decoration: none;
-    color: black;
+    color: var(--clr-light-bg);
   }
   .repo p:first-child {
     border-right: solid 3px black;
@@ -1122,6 +1130,7 @@ html {
     border: solid 1px none;
     border-radius: 0.5rem;
     box-shadow: var(--bs);
+   
   }
   .contact:nth-of-type(1) {
     order: 2;
@@ -1131,6 +1140,7 @@ html {
   }
   .contact-info {
     margin: 3rem 0;
+    color: var(--clr-light-bg);
   }
 }
 

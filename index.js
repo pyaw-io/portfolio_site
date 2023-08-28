@@ -9,7 +9,8 @@ const down_arrow = document.querySelector(".down-arrow")
 const sidelink = document.querySelector(".sidelinks");
 const viewportwidth = window.innerWidth
 const sidebar_background = document.querySelector(".sidebar-background");
-
+const currentYear = document.getElementById("year");
+const year = new Date().getFullYear();
 
 
 
@@ -117,3 +118,7 @@ sidebar.addEventListener("mouseleave", function () {
   highlight.style.visibility = "hidden";
   highlight.style.transition = "all 0s linear 0s";
 });
+
+
+//footer year
+currentYear.innerHTML = year;
